@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  max-width: 100%;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(139, 0, 0, 0.527), rgba(139, 0, 0, 0.548)),
+    url(../img/wether_banner.jpg) no-repeat bottom center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.wether {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(139, 0, 0, 0.212);
+  position: relative;
+  /* overflow: hidden; */
+  padding: 2rem;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+  box-shadow:inset 0 0 20px 5px rgb(241, 63, 63);
+  /*
+     Introduced in Internet Explorer 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.wether::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(139, 0, 0, 0.212);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.search-section {
+  display: flex;
+  align-items: stretch;
+}
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  outline: none;
+  border: 2px solid #fff;
+  background: transparent;
+}
+.search-input::placeholder {
+  color: #fff;
+}
+.search-btn {
+  width: 30%;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+.search-btn:hover {
+  background: rgb(255, 255, 255);
+  color: darkred;
+}
+.result-section {
+  text-align: center;
+  padding: 1rem 0;
+}
+.location {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+}
+.wether-icon {
+  width: 100px;
+}
+.h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 0.4rem;
+}
+/* .day-time {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+} */
+.time-watch{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 0.4rem;
+}
